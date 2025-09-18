@@ -31,7 +31,7 @@ def count_table_entries(tableName: str):
     return _select(f"select count(id) from {tableName}")[0][0]
 
 def get_progress():
-    return f"{count_sorted()}/{count_table_entries("ITEM")}"
+    return f"{count_sorted()}/{count_table_entries('ITEM')}"
 
 def get_unsorted_item_ids():
     return _select(f"select id from ITEM where categoryId IS NULL")
