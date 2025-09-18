@@ -1,0 +1,65 @@
+{% extends "template.html" %}
+{% block title %} Spacify {% endblock %}
+
+{% block container %}
+
+<script defer src="{{ url_for('static', filename='app.js')}}"></script>
+<var id="varItemIds">{{ itemIds }}</var>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+<div class="screen">
+  <!-- Header -->
+  <div class="upperContainer">
+    <h1 id="itemName">Item name</h1>
+
+    <div class="itemInfo">
+      <div>
+        <h2 class="type">TYPE</h2>
+      </div>
+      <div>
+        <span class="progress">{{ progress }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Image Container -->
+  <div class="middleContainer">
+    <div class="imageContainer">
+      <img src="" id="itemImage"/>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="lowerContainer">
+    <div class="upperButtonsContainer">
+      <!-- Keep -->
+      <button onClick="" class="actionButton">
+        <img>
+      </button>
+      
+      <!-- Sell -->
+      <button onClick="" class="actionButton">
+        <img>
+      </button>
+      
+      <!-- Give -->
+      <button onClick="" class="actionButton">
+        <img>
+      </button>
+    </div>
+    
+    <div class="lowerButtonsContainer">
+      <!-- Trash -->
+      <button onClick="" class="actionButton">
+        <img>
+      </button>
+      
+      <!-- Skip -->
+      <button onClick="" class="actionButton">
+        <img>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

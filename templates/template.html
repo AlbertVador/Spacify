@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='shared.css') }}"/>
+  <!-- <script src="https://kit.fontawesome.com/032c2dd8c9.js" crossorigin="anonymous"></script> -->
+</head>
+        
+<body> 
+
+<!--               BARRE DE NAVIGATION                                      -->
+<nav>
+</nav>
+
+{% block content %}
+<!--               SECTION ET CONTAINER                                     -->
+  <section>
+    <div class="container content">
+    {% block container %}
+    {% endblock %}
+    </div>
+  </section>
+{% endblock %}
+
+</body>
+</html>
