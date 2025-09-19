@@ -93,7 +93,7 @@ body {
 }
 
 .upperContainer {
-  margin-top: 0.8rem;
+  margin-top: -0.8rem;
 }
 
 #itemName {
@@ -148,7 +148,6 @@ body {
 }
 
 .lowerContainer {
-  padding-bottom: 0.8rem;
   padding-inline: 0.6rem;
 }
 
@@ -165,7 +164,7 @@ body {
 .lowerButtonsContainer {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-inline: auto;
-  max-width: 70%;
+  max-width: 65%;
 }
 
 .actionButton {
